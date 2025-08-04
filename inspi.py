@@ -102,7 +102,7 @@ else:
         "[CRÍTICO]  Los Proveedores Confirmaron? .",
         "[ADVERTENCIA] Cada segundo perdido aumenta el riesgo."
     ]
-    mensaje_index = (segundos // 5) % len(mensajes)
+    mensaje_index = (segundos // 3) % len(mensajes)
     st.markdown(f"<div class='mensaje'>{mensajes[mensaje_index]}</div>", unsafe_allow_html=True)
 
 # Refresco
